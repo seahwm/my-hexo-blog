@@ -43,12 +43,19 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Deploy
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.MY_TOKEN }}
-          branch: gh-pages
-          force: true
         run: |
           npm run clean
           npm run build
-          npm run deploy
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
