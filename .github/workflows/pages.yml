@@ -46,6 +46,10 @@ jobs:
         run: |
           npm run clean
           npm run build
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
   deploy:
     needs: build
     permissions:
