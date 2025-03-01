@@ -1,4 +1,4 @@
-name: Update the commit id of parent repo
+name: Update the submodule commit id
 on:
   repository_dispatch:
     types:
@@ -26,6 +26,8 @@ jobs:
           git checkout v7.8.0-swm
       - name: Push the latest submodule
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "submodule updated"
           git push
