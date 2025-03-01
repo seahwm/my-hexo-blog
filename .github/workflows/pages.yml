@@ -14,6 +14,12 @@ jobs:
           token: ${{ secrets.MY_TOKEN }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
+      - name: Push to gh-pages
+      - uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.MY_TOKEN }}
+          branch: gh-pages
+          force: true
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
