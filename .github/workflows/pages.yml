@@ -27,6 +27,12 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
+      - name: Setup github action profile
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "Github Action"
+      - name: Check out Test Branch
+        run: git checkout feature/cicd
       - name: Install Theme dependencies
         run: |
           cd themes/next
