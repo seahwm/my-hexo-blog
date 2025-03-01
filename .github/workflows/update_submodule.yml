@@ -25,6 +25,7 @@ jobs:
           git fetch
           git checkout v7.8.0-swm
       - name: Push the latest submodule
+        run: |
           cd ..
           cd ..
           git add .
