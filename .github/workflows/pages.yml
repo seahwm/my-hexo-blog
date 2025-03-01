@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - 'feature/cicd' # default branch
+      - 'master' # default branch
 
 jobs:
   build:
@@ -27,12 +27,6 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - name: Setup github action profile
-        run: |
-          git config --global user.email "seahwm01@gmail.com"
-          git config --global user.name "xxxz"
-      - name: Check out Test Branch
-        run: git checkout feature/cicd
       - name: Install Theme dependencies
         run: |
           cd themes/next
