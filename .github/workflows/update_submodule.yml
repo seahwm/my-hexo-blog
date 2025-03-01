@@ -1,0 +1,25 @@
+name: Dispatch Update to Parent Repo
+on:
+  repository_dispatch:
+    types:
+      - submodule-updated
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.MY_TOKEN }}
+          # If your repository depends on submodule, please see: https://github.com/actions/checkout
+          submodules: recursive
+      - name: Check out latest submodule
+        run: |
+          cd themes/next
+          git pull
+          git checkout v7.8.0-swm
+          cd ..
+          cd ..
+          git add .
+          git commit -m "submodule updated"
+          git push
