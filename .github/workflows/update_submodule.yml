@@ -1,4 +1,4 @@
-name: Dispatch Update to Parent Repo
+name: Update the commit id of parent repo
 on:
   repository_dispatch:
     types:
@@ -26,7 +26,6 @@ jobs:
           git checkout v7.8.0-swm
       - name: Push the latest submodule
         run: |
-          pwd
           cd ..
           git add .
           git commit -m "submodule updated"
