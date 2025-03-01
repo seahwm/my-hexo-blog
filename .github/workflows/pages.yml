@@ -30,6 +30,7 @@ jobs:
       - name: Install Theme dependencies
         run: |
           cd themes/next
+          sud0 chmod +x install_dependency.sh
           ./install_dependency.sh
           cd ..
           cd ..
