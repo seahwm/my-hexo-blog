@@ -16,8 +16,9 @@ jobs:
       - name: Check out latest submodule
         run: |
           cd themes/next
-          git pull -f
+          git fetch
           git checkout v7.8.0-swm
+      - name: Push the latest submodule
           cd ..
           cd ..
           git add .
