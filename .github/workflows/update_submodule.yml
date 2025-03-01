@@ -26,7 +26,7 @@ jobs:
           git checkout v7.8.0-swm
       - name: Push the latest submodule
         run: |
-          cd ..
+          pwd
           cd ..
           git add .
           git commit -m "submodule updated"
