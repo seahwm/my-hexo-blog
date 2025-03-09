@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/my-hexo-blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/my-hexo-blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/my-hexo-blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/my-hexo-blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/my-hexo-blog/css/main.css">
+
+
+<link rel="stylesheet" href="/my-hexo-blog/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"seahwm.github.io","root":"/my-hexo-blog/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="前言本来我是懒惰设置博客的，但是因为我朋友突然间跑来LC我。说他写了个个人网站。而我这个朋友完全不懂代码，我好奇他能写出什么样的就去看了下。好家伙，还蛮不错的，仔细问了下他是用cursor写出来的这样他还来找我说他一天就做完而我做不出来。结果我一气之下，就产出了这个博客网站。 基本设置博客的基本设置我都是参考这个博客https:&#x2F;&#x2F;kuroha.vip&#x2F;hexo&#x2F;next_theme_beauti">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客设置">
+<meta property="og:url" content="https://seahwm.github.io/2025/03/09/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="前言本来我是懒惰设置博客的，但是因为我朋友突然间跑来LC我。说他写了个个人网站。而我这个朋友完全不懂代码，我好奇他能写出什么样的就去看了下。好家伙，还蛮不错的，仔细问了下他是用cursor写出来的这样他还来找我说他一天就做完而我做不出来。结果我一气之下，就产出了这个博客网站。 基本设置博客的基本设置我都是参考这个博客https:&#x2F;&#x2F;kuroha.vip&#x2F;hexo&#x2F;next_theme_beauti">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-03-09T07:32:43.532Z">
+<meta property="article:modified_time" content="2025-03-09T07:32:22.063Z">
+<meta property="article:author" content="xxxz">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://seahwm.github.io/2025/03/09/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>博客设置 | 我的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/my-hexo-blog/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">我的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/my-hexo-blog/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/my-hexo-blog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seahwm.github.io/2025/03/09/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/my-hexo-blog/images/avatar.gif">
+      <meta itemprop="name" content="xxxz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客设置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-03-09 15:32:43 / 修改时间：15:32:22" itemprop="dateCreated datePublished" datetime="2025-03-09T15:32:43+08:00">2025-03-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本来我是懒惰设置博客的，但是因为我朋友突然间跑来LC我。说他写了个个人网站。而我这个朋友完全不懂代码，我好奇他能写出什么样的就去看了下。好家伙，还蛮不错的，仔细问了下他是用cursor写出来的这样他还来找我说他一天就做完而我做不出来。结果我一气之下，就产出了这个博客网站。</p>
+<h2 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h2><p>博客的基本设置我都是参考这个博客<a target="_blank" rel="noopener" href="https://kuroha.vip/hexo/next_theme_beautify.html%EF%BC%8C%E6%84%9F%E8%B0%A2%E8%BF%99%E4%BD%8D%E5%A4%A7%E4%BD%AC%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%8C%E9%87%8C%E9%9D%A2%E8%AF%A6%E7%BB%86%E7%9A%84%E8%AF%B4%E6%98%8E%E4%BA%86%E5%9F%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E3%80%82">https://kuroha.vip/hexo/next_theme_beautify.html，感谢这位大佬的博客，里面详细的说明了基本博客设置和主题设置。</a></p>
+<h2 id="博客部署"><a href="#博客部署" class="headerlink" title="博客部署"></a>博客部署</h2><p>此博客使用Github Page来部署在Github上，并使用Github Action来实现CI&#x2F;CD (详情见下文)。</p>
+<h2 id="博客结构"><a href="#博客结构" class="headerlink" title="博客结构"></a>博客结构</h2><p>此博客使用了hexo框架和next主题来构建。本来我的本意是想着next主题和hexo框架是不同的Git仓库(repo)，所以我也创建了2个Git仓库，主博客和next主题，并添加next主题为主博客仓库的子模块(sub module)。殊不知这带来了诸多不便和麻烦。。。</p>
+<h3 id="Git仓库和子模块的链接"><a href="#Git仓库和子模块的链接" class="headerlink" title="Git仓库和子模块的链接"></a>Git仓库和子模块的链接</h3><p>起初我以为只要设置了子模块，它就会自动与子模块仓库中的特定的branch保持同步。然而事实却是它绑定的只是子模块仓库中的某个commit。也就是说当在子模块仓库commit了一些改变&#x2F;修复一些bug，它并不会自动反映到主仓库。简而言之就是，每次更新子模块仓库后，需要更新主仓库中子模块的commit。这和我最初设想的完全相反。</p>
+<h2 id="自动化更新子模块"><a href="#自动化更新子模块" class="headerlink" title="自动化更新子模块"></a>自动化更新子模块</h2><p>为了解决上述问题，我配置了Github Action来自动化更新主仓库。</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">name:</span> Dispatch Update to Parent Repo</span><br><span class="line"><span class="params">on:</span></span><br><span class="line">  <span class="params">push:</span></span><br><span class="line">    <span class="params">branches:</span></span><br><span class="line">      <span class="operator">-</span> v7.<span class="number">8</span>.<span class="number">0</span><span class="operator">-</span>swm <span class="comment"># Or your desired branch</span></span><br><span class="line"></span><br><span class="line"><span class="params">jobs:</span></span><br><span class="line">  <span class="params">dispatch:</span></span><br><span class="line">    <span class="params">runs-on:</span> ubuntu-latest</span><br><span class="line">    <span class="params">steps:</span></span><br><span class="line">      <span class="operator">-</span> <span class="params">name:</span> Dispatch update to Parent Repo</span><br><span class="line">        <span class="params">uses:</span> peter-evans<span class="operator">/</span>repository-dispatch@v3</span><br><span class="line">        <span class="params">with:</span></span><br><span class="line">          <span class="params">token:</span> $&#123;&#123; secrets.MY_TOKEN &#125;&#125; <span class="comment"># Personal Access Token</span></span><br><span class="line">          <span class="params">repository:</span> seahwm<span class="symbol">/my-hexo-blog</span> <span class="comment"># Replace with your parent repo</span></span><br><span class="line">          <span class="params">event-type:</span> submodule-updated</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/my-hexo-blog/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/my-hexo-blog/2025/02/26/First-Post-Testing/" rel="prev" title="First Post Testing">
+      <i class="fa fa-chevron-left"></i> First Post Testing
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.1.</span> <span class="nav-text">基本设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2"><span class="nav-number">1.2.</span> <span class="nav-text">博客部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E7%BB%93%E6%9E%84"><span class="nav-number">1.3.</span> <span class="nav-text">博客结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git%E4%BB%93%E5%BA%93%E5%92%8C%E5%AD%90%E6%A8%A1%E5%9D%97%E7%9A%84%E9%93%BE%E6%8E%A5"><span class="nav-number">1.3.1.</span> <span class="nav-text">Git仓库和子模块的链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9B%B4%E6%96%B0%E5%AD%90%E6%A8%A1%E5%9D%97"><span class="nav-number">1.4.</span> <span class="nav-text">自动化更新子模块</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">xxxz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/my-hexo-blog/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/seahwm" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;seahwm" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xxxz</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/my-hexo-blog/lib/anime.min.js"></script>
+  <script src="/my-hexo-blog/lib/velocity/velocity.min.js"></script>
+  <script src="/my-hexo-blog/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/my-hexo-blog/js/utils.js"></script>
+
+<script src="/my-hexo-blog/js/motion.js"></script>
+
+
+<script src="/my-hexo-blog/js/schemes/pisces.js"></script>
+
+
+<script src="/my-hexo-blog/js/next-boot.js"></script>
+
+
+  <script defer src="/my-hexo-blog/lib/three/three.min.js"></script>
+    <script defer src="/my-hexo-blog/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<div class="sakana-box" style="position: fixed;right:50px;bottom:0;transform-origin:100% 100%"></div>
+<script src="https://cdn.jsdelivr.net/npm/sakana"></script>
+<script>
+Sakana.init({
+  el:         '.sakana-box',     // 启动元素 node 或 选择器
+  scale:      .5,                // 缩放倍数
+  canSwitchCharacter: true,      // 允许换角色
+});
+Sakana.setMute(false);
+</script>
+
+</body>
+</html>
