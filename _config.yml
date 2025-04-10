@@ -47,6 +47,8 @@ future: true
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
+  exclude_languages:
+  - mermaid
   auto_detect: true
   tab_replace: ''
   wrap: true
