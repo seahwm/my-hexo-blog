@@ -1,4 +1,17 @@
-<div class="sakana-box" style="position: fixed;right:50px;bottom:0;transform-origin:100% 100%"></div>
+<style>
+.sakana-box {
+  position: fixed;
+  left: 50px;
+  bottom: 0;
+  transform-origin: 0% 100%;
+}
+@media (max-width: 768px) {
+  .sakana-box {
+    display: none;
+  }
+}
+</style>
+<div class="sakana-box"></div>
 <script src="https://cdn.jsdelivr.net/npm/sakana"></script>
 <script>
 Sakana.init({
