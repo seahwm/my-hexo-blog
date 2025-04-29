@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - 'master' # default branch
+      - 'feature/sitemap' # default branch
 
 jobs:
   build:
