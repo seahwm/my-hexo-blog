@@ -38,6 +38,7 @@ jobs:
         run: npm install
       - name: Deploy
         run: |
+          git checkout feature/sitemap
           npm run clean
           npm run build
       - name: Upload Pages artifact
