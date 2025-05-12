@@ -39,6 +39,7 @@ jobs:
       - name: Deploy
         run: |
           npm run clean
+          hexo bangumi -u
           npm run build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
