@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo bangumi -u & hexo generate",
+    "build": "hexo bangumi -u & hexo game -u & hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "start" : "npm run clean && npm run build && npm run deploy",
+    "start" : "npm run clean && npm run build && npm run server",
     "server": "hexo server"
   },
   "hexo": {

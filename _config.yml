@@ -138,7 +138,7 @@ bangumi:
     key: value
   coverMirror:
 cinema: # 追剧设置
-  enable: true
+  enable: false
   path:
   vmid:
   title: '追剧列表'
@@ -162,7 +162,7 @@ game: # 游戏设置，仅支持source: bgmv0
   enable: true
   path:
   source: bgmv0
-  vmid:
+  vmid: 936882
   title: '游戏列表'
   quote: '生命不息，游戏不止！'
   show: 1
